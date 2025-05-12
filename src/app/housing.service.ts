@@ -15,7 +15,7 @@ export class HousingService {
         return await data.json() ?? [];
     }
 
-    async getAllHousingLocationById(id: Number): Promise<HousingLocation | undefined> {
+    async getAllHousingLocationById(id: number): Promise<HousingLocation | undefined> {
         const data = await fetch(`${this.url}/${id}`);
         return await data.json() ?? {};
     }
